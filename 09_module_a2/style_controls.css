@@ -1,0 +1,122 @@
+/* Time of Day Controls - Left Side */
+.time-controls {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+    pointer-events: all;
+}
+
+.time-btn {
+    padding: 12px 24px;
+    background: rgba(40, 50, 70, 0.7);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    min-width: 100px;
+}
+
+.time-btn:hover {
+    background: rgba(60, 70, 90, 0.8);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(5px);
+}
+
+.time-btn.active {
+    background: rgba(200, 170, 100, 0.9);
+    border-color: #d4af37;
+    color: #1a1a2e;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+/* Speed Controls - Right Side */
+.speed-controls {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+    pointer-events: all;
+}
+
+.speed-btn {
+    padding: 12px 24px;
+    background: rgba(40, 50, 70, 0.7);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    min-width: 100px;
+}
+
+.speed-btn:hover {
+    background: rgba(60, 70, 90, 0.8);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-5px);
+}
+
+.speed-btn.active {
+    background: rgba(200, 170, 100, 0.9);
+    border-color: #d4af37;
+    color: #1a1a2e;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+/* Playback Controls - Bottom Center */
+.playback-controls {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+    pointer-events: all;
+}
+
+.play-btn {
+    padding: 12px 28px;
+    background: rgba(60, 70, 90, 0.8);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.play-btn .icon {
+    font-size: 14px;
+}
+
+.play-btn:hover {
+    background: rgba(80, 90, 110, 0.9);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.play-btn:active {
+    transform: translateY(-1px);
+}

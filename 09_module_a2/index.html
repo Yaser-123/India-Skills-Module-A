@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Night Sky Cycle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Title -->
+    <h1 class="scene-title" id="sceneTitle">NIGHT</h1>
+
+    <!-- Main Scene Container -->
+    <div class="scene-container">
+        <!-- Sky -->
+        <div class="sky" id="sky">
+            <!-- Stars -->
+            <div class="stars" id="stars"></div>
+            
+            <!-- Moon -->
+            <div class="moon" id="moon"></div>
+            
+            <!-- Sun -->
+            <div class="sun" id="sun"></div>
+            
+            <!-- Clouds -->
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+        </div>
+
+        <!-- Landscape -->
+        <div class="landscape">
+            <!-- Mountains Background -->
+            <div class="mountains-back"></div>
+            
+            <!-- Mountains Middle -->
+            <div class="mountains-mid"></div>
+            
+            <!-- Trees Layer -->
+            <div class="trees-layer"></div>
+            
+            <!-- Ground with River -->
+            <div class="ground">
+                <div class="river"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Time of Day Controls - Left Side -->
+    <div class="time-controls">
+        <button class="time-btn active" onclick="goToNight()" data-time="night">Night</button>
+        <button class="time-btn" onclick="goToDawn()" data-time="dawn">Dawn</button>
+        <button class="time-btn" onclick="goToDay()" data-time="day">Day</button>
+        <button class="time-btn" onclick="goToDusk()" data-time="dusk">Dusk</button>
+    </div>
+
+    <!-- Speed Controls - Right Side -->
+    <div class="speed-controls">
+        <button class="speed-btn" onclick="setSpeed('slow')" data-speed="slow">Slow</button>
+        <button class="speed-btn" onclick="setSpeed('normal')" data-speed="normal">Normal</button>
+        <button class="speed-btn active" onclick="setSpeed('fast')" data-speed="fast">Fast</button>
+    </div>
+    
+    <!-- Playback Controls - Bottom Center -->
+    <div class="playback-controls">
+        <button class="play-btn" onclick="startAnimation()">
+            <span class="icon">▶</span> Play
+        </button>
+        <button class="play-btn" onclick="pauseAnimation()">
+            <span class="icon">⏸</span> Pause
+        </button>
+        <button class="play-btn" onclick="stopAnimation()">
+            <span class="icon">⏹</span> Stop
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
